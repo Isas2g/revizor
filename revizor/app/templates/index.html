@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Добрый день. Здесь вы можете посмотреть отзывы на кафе и рестораны города.</h1>
+
+{% for comment in comments %}
+
+    {{ comment.author }} отзывается так: <br>
+    <b> {{ comment.body }} </b> <br>
+
+{% endfor %}
+{% endblock %}
